@@ -1,0 +1,43 @@
+.full-screen{
+    height: 100vh;
+    width: 100%;
+    padding: 0 2%;
+    display: table;
+    margin: 0;
+    max-width: none;
+}
+
+.middle-fullscreen {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mainpage img{
+    width: 150px;
+}
+
+.mainpage h1{
+    font-family: 'Righteous', cursive;
+    font-size: 3.5em;
+}
+
+.mainpage h2{
+    font-size: 1.5em;
+}
+
+.mainpage h2, a{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.mainpage a:link, .mainpage a:visited{
+    color: purple;
+}
+
+.mainpage a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.mainlinks{
+    margin-top: 20px !important;
+}
