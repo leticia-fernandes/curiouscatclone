@@ -15,4 +15,9 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/perfil/{username}', 'PageController@index')->name('perfil');
+Route::get('/home', 'HomeController@index');
+
+Route::get('/perfil/{username}', 'PageController@perfil')->name('perfil');
+
+Route::get('/explorar', 'PageController@explorar');
+Route::post('/explorar', 'UserController@encontrarUsuarios');

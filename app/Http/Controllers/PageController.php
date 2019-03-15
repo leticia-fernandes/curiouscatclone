@@ -19,4 +19,9 @@ class PageController extends Controller
 
         return view('usuario.perfil', compact('dadosUsuario'));
     }
+
+    public function explorar()
+    {
+        return view('explorar');
+    }
 }
