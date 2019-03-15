@@ -15,7 +15,12 @@ class CreateRespostasTables extends Migration
     {
         Schema::create('respostas_tables', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('resposta_conteudo');
+            $table->unsignedInteger('pergunta_id');
+            $table->boolean('ativo')->default(true);
             $table->timestamps();
+
+            $table->foreign('pergunta_id')->references('id')->on('perguntas')->onDelete('cascade');
         });
     }
 
