@@ -13,7 +13,7 @@
 }
 
 .mainpage img{
-    width: 150px;
+    width: 100px;
 }
 
 .mainpage h1{
@@ -40,4 +40,32 @@
 
 .mainlinks{
     margin-top: 20px !important;
+}
+
+.nav-ccc img {
+    width: 50px;
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Titillium Web';
+    font-weight: 800;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(41,0,41);
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    outline: none;
+}
+
+.dropdown-item {
+    font-family: 'Titillium Web';
+    font-weight: 200;
+    color: black;
+}
+
+.navbar-nav .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: purple !important;
 }
