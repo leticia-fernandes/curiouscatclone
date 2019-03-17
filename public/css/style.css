@@ -117,6 +117,7 @@
 
 .perfil{
     padding-top: 25px;
+    padding-bottom: 50px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -157,6 +158,11 @@
     border-radius: 15px;
 }
 
+.lista-perguntas-respostas a:link, .lista-perguntas-respostas a:visited, .lista-perguntas-respostas a:hover{
+    color: purple;
+    font-weight: bold;    
+}
+
 .lista-perguntas-respostas h1{
     font-size: 1.5em;
     color: purple;
@@ -175,4 +181,11 @@
 .perguntas-recebidas h1{
     font-family: 'Bree Serif', serif;
     margin-bottom: 30px;
+}
+
+.btn-like{
+    background-color: white;
+    color: purple;
+    border: 0;
+    outline: 0;
 }

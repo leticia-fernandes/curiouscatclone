@@ -64,9 +64,32 @@
                 </div>
             @endif
 
-            @if(isset($perguntasRespondidas) && count($perguntasRespondidas) > 0)
+            @if(isset($perguntasRespondidas) && count($perguntasRespondidas) > 0 )
                 @foreach($perguntasRespondidas as $pergunta)
                     <div class="lista-perguntas-respostas">  
+                        @if($pergunta->userLiked === false && $usuario->id != auth()->id())
+                            <div class="row">
+                                <div class="col text-right">                                    
+                                    <form action="/like" method="POST">
+                                        @csrf
+                                        <input type="hidden" value="{{$pergunta->resposta_id}}" name="resposta_id"/> 
+                                        <input type="hidden" value="{{auth()->id()}}" name="usuario_like_id"/> 
+                                        <small class="text-muted">{{$pergunta->qtdLikes ? $pergunta->qtdLikes : '0'}} likes</small>
+                                        <button type="submit" class="btn-like"><i class="far fa-heart"></i></button>                                        
+                                    </form>
+                                </div>
+                            </div>
+                        @endif
+                        @if($pergunta->userLiked === true || $usuario->id == auth()->id())
+                            <div class="row">
+                                <div class="col text-right">                                     
+                                        <small class="text-muted">{{$pergunta->qtdLikes ? $pergunta->qtdLikes : '0'}} likes</small>
+                                        <button type="button" class="btn-like" disabled><i class="fas fa-heart"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        @endif
+
                         <div class="row">
                             <div class="col">
                                 <h1>{{$pergunta->pergunta_conteudo}}</h1>
@@ -86,7 +109,7 @@
                                         @endif
                                 </small>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
                 @endforeach
             @else

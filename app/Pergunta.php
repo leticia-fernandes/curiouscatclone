@@ -27,7 +27,10 @@ class Pergunta extends Model
             ->leftjoin('users', function($join) {
                 $join->on('perguntas.remetente_id','=','users.id');
             })
-            ->select('perguntas.*', 'respostas.*', 'users.username as remetente_username')
+            ->select('perguntas.*', 
+                     'respostas.id as resposta_id',
+                     'respostas.resposta_conteudo', 
+                     'users.username as remetente_username')
             ->orderBy('perguntas.created_at', 'desc')
             ->get();
     }

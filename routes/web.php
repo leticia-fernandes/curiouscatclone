@@ -30,3 +30,5 @@ Route::post('/perguntar', 'PerguntaController@store');
 Route::get('/perguntas_recebidas', 'PerguntaController@perguntasRecebidas')->name('perguntas_recebidas');
 
 Route::post('/responder', 'RespostaController@store');
+
+Route::post('/like', 'LikeController@store');
