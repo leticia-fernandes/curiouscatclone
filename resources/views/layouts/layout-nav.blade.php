@@ -44,11 +44,11 @@
                     @else
                         <li class="nav-item" role="presentation"><a class="nav-link" href="{{ url('/') }}">Início</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="{{ url('/explorar') }}">Explorar</a></li>
-                        <li class="nav-item dropdown show">
-                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" href="#">{{ Auth::user()->name }} &nbsp;</a>
-                            <div class="dropdown-menu" role="menu">
-                                <a class="dropdown-item" role="presentation" href="{{ url('/perguntas') }}">Perguntas Recebidas</a>
-                                <a class="dropdown-item" role="presentation" href="{{ url('/conta') }}">Conta</a>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">{{ Auth::user()->name }} &nbsp;</a>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <a class="dropdown-item" role="presentation" href="{{ route('perguntas_recebidas') }}">Perguntas Recebidas</a>
+                                {{-- <a class="dropdown-item" role="presentation" href="{{ url('/conta') }}">Conta</a> --}}
                                 <a class="dropdown-item" role="presentation" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                                     {{ __('Sair') }}</a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

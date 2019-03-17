@@ -15,8 +15,13 @@ class UserController extends Controller
 
     public function encontrarUsuarios(Request $request)
     {
-        $usuario_solicitado = request('usuario_solicitado');
-        $usuarios = User::where('name', 'LIKE', '%' . $usuario_solicitado . '%')->orWhere('username', 'LIKE', '%' . $usuario_solicitado . '%')->get();
+        $usuarios = null;
+
+        $usuario_solicitado = $request->usuario_solicitado;
+
+        if($usuario_solicitado){
+            $usuarios = User::where('name', 'LIKE', '%' . $usuario_solicitado . '%')->orWhere('username', 'LIKE', '%' . $usuario_solicitado . '%')->get();
+        }
 
         if (count ($usuarios) > 0) {
             return view('explorar')->withRetorno($usuarios)->withSolicitacao($usuario_solicitado);

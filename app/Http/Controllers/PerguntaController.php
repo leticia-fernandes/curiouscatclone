@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Pergunta;
+use Illuminate\Support\Facades\Validator;
 
 class PerguntaController extends Controller
 {
@@ -25,16 +26,6 @@ class PerguntaController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -42,75 +33,40 @@ class PerguntaController extends Controller
      */
     public function store(Request $request)
     {
-        $input = $request->all();
 
-
-        $validator = Validator::make($input, [
-
-            'pergunta_conteudo' => 'required',
-
-            'destinatario_id' => 'required'
-
+        
+        $validator = Validator::make($request->all(), [
+            'pergunta_conteudo' => ['required','string', 'min:1'],
+            'destinatario_id' => 'required',
         ]);
 
-
-        if($validator->fails()){
-
-            return $this->sendError('Validation Error.', $validator->errors());
-
+        if ($validator->fails()) {
+             return redirect()->back()->withErrors(['pergunta_conteudo' =>'Digite algo...']);
         }
 
+        $data = array();
+        $data['pergunta_conteudo'] = $request->pergunta_conteudo;
+        $data['destinatario_id'] = $request->destinatario_id; 
+        $data['anonimo'] = true;               
+        if(!$request->anonimo){
+            $data['anonimo'] = false;
+            $data['remetente_id'] = auth()->id();
+        }
 
+        Pergunta::create($data);
 
-
-        $candidato = Candidato::create($input);
-
-
-        return $this->sendResponse($candidato->toArray(), 'Candidato criado com sucesso.');
+        return redirect()->back()->with('msg', 'Sua pergunta foi enviada!');
+        
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
+    public function perguntasRecebidas(){
+        
+        $perguntas = Pergunta::getPerguntasRecebidas(auth()->id());
+
+        return view('usuario.perguntas-recebidas',['perguntasRecebidas' => $perguntas]);    
+        
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

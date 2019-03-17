@@ -13,7 +13,7 @@ class CreateRespostasTables extends Migration
      */
     public function up()
     {
-        Schema::create('respostas_tables', function (Blueprint $table) {
+        Schema::create('respostas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('resposta_conteudo');
             $table->unsignedInteger('pergunta_id');

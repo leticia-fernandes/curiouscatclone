@@ -25,7 +25,7 @@
     font-size: 1.5em;
 }
 
-.mainpage h2, a{
+.mainpage h2, .mainpage a{
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -47,19 +47,19 @@
 }
 
 .navbar-light .navbar-brand {
-    font-family: 'Titillium Web';
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 800;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(41,0,41);
-    font-family: 'Titillium Web';
+    font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
     outline: none;
 }
 
 .dropdown-item {
-    font-family: 'Titillium Web';
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 200;
     color: black;
 }
@@ -68,4 +68,111 @@
     color: #fff;
     text-decoration: none;
     background-color: purple !important;
+}
+
+.explorar{
+    padding-top: 25px; 
+    font-family: 'Titillium Web', sans-serif;
+}
+.explorar h1{
+    font-family: 'Bree Serif', serif;
+}
+
+.explorar p strong{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5em;
+}
+
+
+
+.btn-ccc-search, .btn-ccc-search:visited, .btn-ccc-search:focus{
+    background-color: purple !important;
+    color: white !important;
+    outline: none !important;
+    border: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    padding: 7px 10px 7px 10px !important;
+}
+
+.btn-ccc, .btn-ccc:visited, .btn-ccc:focus{
+    background-color: purple !important;
+    color: white !important;
+    outline: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.btn-ccc:hover, .btn-ccc-search:hover{
+   opacity: 0.8;
+}
+
+.explorar td a:link,.explorar td a:visited{
+    color: purple;
+}
+
+.explorar td a:hover{
+    opacity: 0.8;
+}
+
+.perfil{
+    padding-top: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.perfil h1{
+    font-family: 'Bree Serif', serif;
+}
+
+.perfil h2{
+    font-size: 1.5em;
+    color: purple;
+}
+
+.perguntas-respondidas{
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.perguntas-respondidas h3{
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;    
+}
+
+.perguntas-respondidas p{
+    font-weight: 900;
+    font-size: 2.5em;    
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+
+.lista-perguntas-respostas{
+    margin: 15px 0px 15px 0px;
+    border: 2px solid rgb(224, 214, 224);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.lista-perguntas-respostas h1{
+    font-size: 1.5em;
+    color: purple;
+}
+
+.lista-perguntas-respostas h2{
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+.perguntas-recebidas{
+    padding-top: 25px;
+}
+
+.perguntas-recebidas h1{
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 30px;
 }

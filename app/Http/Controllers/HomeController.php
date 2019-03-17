@@ -12,7 +12,7 @@ class HomeController extends Controller
         if(auth()->check()){
             $usuario = User::find(auth()->id());
 
-            return view('usuario.perfil', compact('usuario'));
+            return redirect(route('perfil', $usuario->username));
         }
 
         return view('index');
