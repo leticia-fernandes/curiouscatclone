@@ -64,7 +64,7 @@
                 </div>
             @endif
 
-            @if(isset($perguntasRespondidas))
+            @if(isset($perguntasRespondidas) && count($perguntasRespondidas) > 0)
                 @foreach($perguntasRespondidas as $pergunta)
                     <div class="lista-perguntas-respostas">  
                         <div class="row">
