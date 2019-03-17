@@ -11,10 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/perfil', function () {
+    return redirect('/explorar');
+});
+Route::get('/perfil/{username}', 'PageController@perfil')->name('perfil');
+
+Route::get('/explorar', 'PageController@explorar')->name('explorar');
+Route::post('/explorar', 'UserController@encontrarUsuarios');
+
+Route::post('/perguntar', 'PerguntaController@store');
+
+Route::get('/perguntas_recebidas', 'PerguntaController@perguntasRecebidas')->name('perguntas_recebidas');
+
+Route::post('/responder', 'RespostaController@store');
+
+Route::post('/like', 'LikeController@store');
