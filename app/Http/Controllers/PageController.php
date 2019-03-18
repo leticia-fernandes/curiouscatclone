@@ -20,7 +20,7 @@ class PageController extends Controller
         $usuario = $request->username;
         $usuario = User::where('username', 'LIKE',  $usuario)->first();
 
-        if(count($usuario) > 0){
+        if($usuario){
             $perguntas = Pergunta::getPerguntasRespostas($usuario->id);
             $qtdPerguntas = count($perguntas);
 
@@ -29,13 +29,13 @@ class PageController extends Controller
                 $pergunta->userLiked = false;
 
                 $retorno = count(Like::where('resposta_id', $pergunta->resposta_id)->where('usuario_like_id', auth()->id())->get());
-                
+
                 if($retorno){
                     $pergunta->userLiked = true;
                 }
-            }            
+            }
 
-            return view('usuario.perfil',['usuario' => $usuario, 'perguntasRespondidas' => $perguntas, 'qtdPerguntasRespondidas' => $qtdPerguntas]);    
+            return view('usuario.perfil',['usuario' => $usuario, 'perguntasRespondidas' => $perguntas, 'qtdPerguntasRespondidas' => $qtdPerguntas]);
         }
 
         return redirect('/explorar');
