@@ -110,46 +110,18 @@ Aplicação rodando no seu localhost http://localhost:8000/
 
 # Screenshots
 
-<p align="center">
-	<a href="">
-		<img  src="https://imgur.com/YzLYUNL">
-	</a>
-</p>
-<p align="center">
-	<a href="">
-		<img src="https://imgur.com/hWSFKQX" >
-	</a>
-</p>
-<p align="center">
-	<a href="">
-		<img src="https://imgur.com/yy6KT7j" >
-	</a>
-</p>
-<p align="center">
-	<a href="">
-		<img src="https://imgur.com/Vvu88op" >
-	</a>
-</p>
-<p align="center">
-	<a href="">
-		<img src="https://imgur.com/22Vw9NJ" >
-	</a>
-</p>
-<p align="center">
-	<a href="">
-		<img src="https://imgur.com/LrE6Wgi" >
-	</a>
-</p>
-<p align="center">
-	<a href="">
-		<img src="https://imgur.com/h1L11Ip" >
-	</a>
-</p>
-<p align="center">
-	<a href="">
-		<img src="https://imgur.com/eSld4Mn" >
-	</a>
-</p>
+
+
+![alt text](https://imgur.com/YzLYUNL)
+![alt text](https://imgur.com/hWSFKQX)
+![alt text](https://imgur.com/yy6KT7j)
+![alt text](https://imgur.com/Vvu88op)
+![alt text](https://imgur.com/22Vw9NJ)
+![alt text](https://imgur.com/LrE6Wgi)
+![alt text](https://imgur.com/h1L11Ip)
+![alt text](https://imgur.com/eSld4Mn)
+
+
 
 
 
