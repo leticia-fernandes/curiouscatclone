@@ -111,16 +111,7 @@ Aplicação rodando no seu localhost http://localhost:8000/
 # Screenshots
 
 
-
-![alt text](https://imgur.com/YzLYUNL)
-![alt text](https://imgur.com/hWSFKQX)
-![alt text](https://imgur.com/yy6KT7j)
-![alt text](https://imgur.com/Vvu88op)
-![alt text](https://imgur.com/22Vw9NJ)
-![alt text](https://imgur.com/LrE6Wgi)
-![alt text](https://imgur.com/h1L11Ip)
-![alt text](https://imgur.com/eSld4Mn)
-
+<a href='https://imgur.com/a/e9lzNHN'>https://imgur.com/a/e9lzNHN</a>
 
 
 
