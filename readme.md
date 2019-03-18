@@ -110,15 +110,46 @@ Aplicação rodando no seu localhost http://localhost:8000/
 
 # Screenshots
 
-<img src="https://imgur.com/YzLYUNL"/>
-<img src="https://imgur.com/hWSFKQX"/>
-<img src="https://imgur.com/yy6KT7j"/>
-<img src="https://imgur.com/Vvu88op"/>
-<img src="https://imgur.com/22Vw9NJ"/>
-<img src="https://imgur.com/LrE6Wgi"/>
-<img src="https://imgur.com/h1L11Ip"/>
-<img src="https://imgur.com/eSld4Mn"/>
-
+<p align="center">
+	<a href="">
+		<img  src="https://imgur.com/YzLYUNL">
+	</a>
+</p>
+<p align="center">
+	<a href="">
+		<img src="https://imgur.com/hWSFKQX" >
+	</a>
+</p>
+<p align="center">
+	<a href="">
+		<img src="https://imgur.com/yy6KT7j" >
+	</a>
+</p>
+<p align="center">
+	<a href="">
+		<img src="https://imgur.com/Vvu88op" >
+	</a>
+</p>
+<p align="center">
+	<a href="">
+		<img src="https://imgur.com/22Vw9NJ" >
+	</a>
+</p>
+<p align="center">
+	<a href="">
+		<img src="https://imgur.com/LrE6Wgi" >
+	</a>
+</p>
+<p align="center">
+	<a href="">
+		<img src="https://imgur.com/h1L11Ip" >
+	</a>
+</p>
+<p align="center">
+	<a href="">
+		<img src="https://imgur.com/eSld4Mn" >
+	</a>
+</p>
 
 
 
