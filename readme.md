@@ -110,8 +110,10 @@ Aplicação rodando no seu localhost http://localhost:8000/
 
 # Screenshots
 
+<p align="center">
+    <img alt="Logo" src="https://i.imgur.com/YzLYUNL.png" width="600px">
+</p>
 
-<a href='https://imgur.com/a/e9lzNHN'>https://imgur.com/a/e9lzNHN</a>
 
 
 
