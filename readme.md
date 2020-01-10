@@ -112,6 +112,13 @@ Aplicação rodando no seu localhost http://localhost:8000/
 
 <p align="center">
     <img alt="Logo" src="https://i.imgur.com/YzLYUNL.png" width="600px">
+    <img alt="Logo" src="https://i.imgur.com/hWSFKQX.png" width="600px">
+    <img alt="Logo" src="https://i.imgur.com/yy6KT7j.png" width="600px">
+    <img alt="Logo" src="https://i.imgur.com/Vvu88op.png" width="600px">
+    <img alt="Logo" src="https://i.imgur.com/22Vw9NJ.png" width="600px">
+    <img alt="Logo" src="https://i.imgur.com/LrE6Wgi.png" width="600px">
+    <img alt="Logo" src="https://i.imgur.com/h1L11Ip.png" width="600px">
+    <img alt="Logo" src="https://i.imgur.com/eSld4Mn.png" width="600px">    
 </p>
 
 
